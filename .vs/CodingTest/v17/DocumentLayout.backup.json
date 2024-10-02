@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Thomh\\Documents\\CodingTest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B2417389-1D62-4DAD-BAC9-163F298A48D7}|CodingTest\\CodingTest.csproj|c:\\users\\thomh\\documents\\codingtest\\codingtest\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B2417389-1D62-4DAD-BAC9-163F298A48D7}|CodingTest\\CodingTest.csproj|solutionrelative:codingtest\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2417389-1D62-4DAD-BAC9-163F298A48D7}|CodingTest\\CodingTest.csproj|c:\\users\\thomh\\documents\\codingtest\\codingtest\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B2417389-1D62-4DAD-BAC9-163F298A48D7}|CodingTest\\CodingTest.csproj|solutionrelative:codingtest\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2417389-1D62-4DAD-BAC9-163F298A48D7}|CodingTest\\CodingTest.csproj|c:\\users\\thomh\\documents\\codingtest\\codingtest\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{B2417389-1D62-4DAD-BAC9-163F298A48D7}|CodingTest\\CodingTest.csproj|solutionrelative:codingtest\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2417389-1D62-4DAD-BAC9-163F298A48D7}|CodingTest\\CodingTest.csproj|c:\\users\\thomh\\documents\\codingtest\\codingtest\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B2417389-1D62-4DAD-BAC9-163F298A48D7}|CodingTest\\CodingTest.csproj|solutionrelative:codingtest\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Thomh\\Documents\\CodingTest\\CodingTest\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "CodingTest\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Thomh\\Documents\\CodingTest\\CodingTest\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "CodingTest\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAGcBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-01T23:43:46.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\Thomh\\Documents\\CodingTest\\CodingTest\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "CodingTest\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\Thomh\\Documents\\CodingTest\\CodingTest\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "CodingTest\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAQwEUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-01T23:38:26.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Thomh\\Documents\\CodingTest\\CodingTest\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "CodingTest\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Thomh\\Documents\\CodingTest\\CodingTest\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "CodingTest\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-01T23:36:57.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Thomh\\Documents\\CodingTest\\CodingTest\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "CodingTest\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Thomh\\Documents\\CodingTest\\CodingTest\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "CodingTest\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAG4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-01T22:39:41.675Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

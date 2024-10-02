@@ -1,0 +1,382 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@{
+    var element = ViewBag.Elements as CodingTest.Models.Elements;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+
+    <!-- NavBar -->
+    <div class="navBar">
+
+
+
+
+
+        <!-- Display elements on left -->
+        <div class="left"><img src="Assets/logo.png" ></div>
+        <!-- Display elements on right -->
+        <div class="right">
+            <button class="navBarButton" style="color:#DDB62E;" id="button1">Home</button>
+            <button class="navBarButton" id="button2">Services</button>
+            <button class="navBarButton" id="button3">Sustainability</button>
+            <button class="navBarButton" id="button4">our work</button>
+            <button class="navBarButton" id="button5">resources</button>
+            <button class="navBarButton" id="button6">about Iota</button>
+            <button class="navBarButton" id="button7">Get in touch</button>
+            <img src="Assets/search.png" style="margin-right:2%;">
+
+            <!-- Amazing fonts icon -->
+            <i class="fa-solid fa-grip-lines" style="font-size: 24px; color: #333333;"></i>
+        </div>
+        
+ 
+                   
+    
+    </div>
+
+
+    <!-- Box with transparent inside. -->
+    <!-- Displays curved border around all other content -->
+    <div class="curvedBox"></div>
+
+    <!-- Grid that contains panals -->
+    <div class="grid-y" style="width: 95%;margin: auto; margin-top:6.2em;position:relative;">
+        <!-- Panal 1 -->
+        <div class="cell">
+            <div class="customCell">
+                @if (element != null)
+                {
+                    <img src="Assets/@element.Panal1Image" style="filter: brightness(65%);">
+                    
+
+                }
+                
+                <!-- Allows for content to be displayed over image -->
+                <div class="overlayContent" >
+                    <div class="grid-y" style="max-width:50%">
+                        <div class="panalTextContainer">
+                            <div class="cell">
+                                <div class="panalTitleText">
+                                    <!-- Displays data from database -->
+                                    @if (element != null)
+                                    {
+                                        @element.Panal1Title
+
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+ 
+                </div>
+                <div class="dots">
+                    <img src="Assets/Group 428.png">
+                </div>
+
+            </div>
+        </div>
+        <!-- Panal 2 -->
+        <div class="cell" style=" background-color: #F4F4F4;">
+            <div >
+                <!-- Container for image and text -->
+                <div class="customBuildBox">
+                    <!-- Box for image that stays to the left  -->
+                    <div class="circleImageBox">
+                        <img src="Assets/circle-icons.png">
+                    </div>
+                    <!-- box for text that stays on the right -->
+                    <div class="circleImageTextBox">
+                        <div class="darkblueTitle">
+                            @if (element != null)
+                            {
+                                @element.Panal2Title
+
+                            }
+                        </div>
+                        <div class="panalTextContainer">
+                            <div class="grid-y">
+                                <div class="cell" style="text-align:center;">
+                             
+                                        <div class="panal2text">
+                                            @if (element != null)
+                                            {
+                                                @element.Panal2Text
+
+                                            }
+                                         </div>
+
+
+                                </div>
+                                <div class="cell">
+                                    <div class="panal2text">
+                                        <button class="panal2button">What we do</button>
+                                    </div>
+ 
+                                    
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Panal 3 -->
+        <div class="cell">
+
+            <div >
+
+                <div class="grid-x grid-margin-x">
+                    <!-- Title for panal -->
+                    <div class="cell small-12">
+                        <div class="exploreTitle">
+                            @if (element != null)
+                            {
+                                @element.Panal3Title
+
+                            }
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="grid-x grid-margin-x align-center" style="margin-bottom:3rem;">
+                    <!-- grid for small images  -->
+                    <!-- Grid has three columns -->
+                    <div class="cell small-3" id="smallImage1" >                
+                            <div class="customCellSmallImage" style="align-items: flex-end;">
+                                    <img src="Assets/image5.png" style="filter: brightness(65%);">
+                                    <!-- shadow image overlayed onto the original image -->
+                                    <div class="shadow">
+                                        <div class="grid-y">
+                                            <img src="Assets/shadowhor.png">
+                                        </div>
+                                    </div>
+                                    <!-- overlays text onto original image and shadow image -->
+                                    <div class="overlayContent">
+                                        <div class="panalTextContainer">
+                                            <div class="grid-y">
+                                                <div class="cell" >
+                                                    <div class="smallImageTitle">
+                                                        @if (element != null)
+                                                        {
+                                                            @element.Panal3ImageTitle1
+
+                                                        }
+                                                    </div>
+                                                </div>
+                                                <div class="cell">
+                                                    <div class="smallImageText">
+                                                        @if (element != null)
+                                                        {
+                                                            @element.Panal3ImageText1
+
+                                                        }
+                                                    </div>
+                                                </div>
+                                                <div class="cell">
+                                                    <div class="smallImageFooter">
+                                                        VIEW MORE <i class="fa-solid fa-arrow-right"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                              
+                            </div>
+                      
+                     </div>
+                    <!-- same as previous cell -->
+                    <div class="cell small-3" id="smallImage2">
+                        <div class="CenterInCell">
+                            <div class="customCellSmallImage" style="align-items: flex-end;">
+                                <img src="Assets/image3.png" ">
+                                <div class="shadow">
+                                    <div class="grid-y">
+                                        <img src="Assets/shadowhor.png">
+                                    </div>
+                                </div>
+                                <div class="overlayContent">
+                                    <div class="panalTextContainer">
+                                        <div class="grid-y">
+                                            <div class="cell">
+                                                <div class="smallImageTitle">
+                                                    @if (element != null)
+                                                    {
+                                                        @element.Panal3ImageTitle2
+
+                                                    }
+                                                </div>
+                                            </div>
+                                            <div class="cell">
+                                                <div class="smallImageText">
+                                                    @if (element != null)
+                                                    {
+                                                        @element.Panal3ImageText2
+
+                                                    }
+                                                </div>
+                                            </div>
+                                            <div class="cell">
+                                                <div class="smallImageFooter">
+                                                    VIEW MORE <i class="fa-solid fa-arrow-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- same as previous cell -->
+                    <div class="cell small-3" id="smallImage3">
+                        <div class="CenterInCell">
+                            <div class="customCellSmallImage" style="align-items: flex-end;">
+                                <img src="Assets/image2.png">
+                                <div class="shadow">
+                                    <div class="grid-y">
+                                        <img src="Assets/shadowhor.png">
+                                    </div>
+                                </div>
+                                <div class="overlayContent">
+                                    <div class="panalTextContainer">
+                                        <div class="grid-y">
+                                            <div class="cell">
+                                                <div class="smallImageTitle">
+                                                    @if (element != null)
+                                                    {
+                                                        @element.Panal3ImageTitle3
+
+                                                    }
+                                                </div>
+                                            </div>
+                                            @if (element != null)
+                                            {
+                                            <div class="cell">
+                                                <div class="smallImageText">
+                                                
+                                                        @element.Panal3ImageText3
+
+                                                
+                                                </div>
+                                            </div>
+                                            }
+                                            <div class="cell">
+                                                <div class="smallImageFooter">
+                                                    VIEW MORE <i class="fa-solid fa-arrow-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+
+
+    <!-- Panal 4 -->
+    <!-- container for the four icons -->
+    <div class="iconContainer" >
+        <div class="grid-x grid-margin-x align-center" id="iconGrid">
+            <div class="cell small-2 " style="  margin-top:2rem;margin-bottom:2rem">
+                <div class="CenterInCell"><img src="Assets/Group 456.png"></div>
+                
+            </div>
+            <div class="cell small-2" style="  margin-top:2rem;margin-bottom:2rem;">
+                <div class="CenterInCell"><img src="Assets/Group 457.png"></div>
+                
+
+            </div>
+            <div class="cell small-2" style="  margin-top:2rem;margin-bottom:2rem;">
+                <div class="CenterInCell"><img src="Assets/Group 458.png"></div>
+                
+            </div>
+            <div class="cell small-2" style="  margin-top:2rem;margin-bottom:2rem;">
+                <div class="CenterInCell"><img src="Assets/Group 459.png"></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="content-container ">
+        <div class="grid-y ">
+            <div class="cell">
+                <div class="customCell">
+                    <img src="Assets/image1.png" style="filter: brightness(65%);">
+                    <!-- Allows for text to be overlayed onto image -->
+                    <div class="overlayContent">
+                        <div class="grid-y" style="max-width:50%">
+                                <div class="panalTextContainer">
+                                    <div class="cell">
+                                        <div class="panalTitleText">
+                                    
+                                            @if (element != null)
+                                            {
+                                                @element.Panal4Title
+
+                                            }
+                                        </div>
+                                    </div>
+                                    
+
+                                    <div class="panalText">
+                                        <div class="cell">
+                                            @if (element != null)
+                                            {
+                                                @element.Panal4Text
+
+                                            }
+                                            
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <!-- small grid for buttons -->
+                                    <div class="grid-x grid-margin-x align-center">
+                                        <div class="small-cell 2" style="padding:2rem;">
+                                            <button class="panal4buttonleft"><i class="fa-regular fa-circle-play"></i> Watch the video</button>
+                                        </div>
+                                        <div class="small-cell 2" style="padding:2rem;">
+                                            <button class="panal4buttonright">About IOTA</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer image -->
+        
+        <div class="grid-y ">
+            <div class="cell" style="margin-bottom:2rem;">
+                <div class="footerContainer">
+                    <img src="Assets/Footer.png" id="footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

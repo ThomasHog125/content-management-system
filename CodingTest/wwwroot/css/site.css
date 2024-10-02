@@ -1,0 +1,398 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* removes element from screen */
+.hide {
+    display: none;
+    background-color:transparent;
+}
+
+/* styles buttons for navbar */
+
+.navBarButton {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 0px;
+    font-size: 100%;
+    width: fit-content;
+    background-color: white;
+    color: #333333;
+}
+/* flexbox for navbar allows for items to be on the left and right */
+.navBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding:2rem;
+    padding-right: 2rem;
+    z-index: 6;
+}
+
+
+/* sends items in navar to left */
+.left {
+    height:4vh;
+    display: flex;
+    justify-content:flex-end;
+    align-items:center;
+    
+    margin-left:12%;
+}
+    /* makes image fit to the size of the div */
+    .left img {
+  
+        height: 100%;
+        width:auto;
+
+    }
+
+/* sends items in navbar to the right  */
+.right {
+    display: flex;
+  
+    justify-content: flex-end;
+    width: 70%;
+    margin-left: 20%;
+    margin-right: 5%;
+}
+
+
+/* sends elements to the bottom of the div */
+.dots {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    margin-bottom: 1rem;
+}
+
+/* container that fills most of a page and automatically gets centered */
+.content-container {
+    width: 95%;
+    margin: auto;
+    height:fit-content;
+}
+
+
+
+/* fixed box with invisible backgournd and thick curved border */
+/* creates the effect of curved area around content */
+.curvedBox {
+    position:fixed;
+    top:0;
+    margin-top:5.9%;
+    margin-left:2%;
+    width: 96%; 
+    height: 100%; 
+    border: 1vh solid white; 
+    border-bottom: none; 
+    border-top-left-radius: 2vh; 
+    border-top-right-radius: 2vh; 
+    background-color: transparent; 
+    box-sizing: border-box; 
+}
+
+/* a cell that allows for content to be overlayed on it */
+/* it also fixes the height of foundation xy cells  */
+.customCell {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+    /* images will fit the size of the div and are on the z layer 1*/
+    .customCell img {
+        margin: 0px;
+        height:100%;
+        padding: 0px;
+        display: block;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+
+/* custom cell but for smaller images */
+.customCellSmallImage {
+    position: relative;
+    display: flex;
+    height:40vh;
+    width:fit-content;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+    .customCellSmallImage img {
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+        width:100%;
+        display: block;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+/* container for "custom build" section of the webpage */
+.customBuildBox {
+    width: 100%;
+    height: fit-content;
+    background-color: #F4F4F4;
+}
+/* box to contain a circular image that stays to the left  */
+.circleImageBox {
+
+    text-align:center;
+
+}
+/* text box stays to the right of the circle image */
+.circleImageTextBox {
+
+    text-align: center;
+    padding:4rem;
+
+    padding-right:20%;
+    padding-top:10%;
+}
+/* Container that sets the position and font of text for panal 2 */
+.panal2text {
+    width: 75%;
+    margin: auto;
+    margin-top: 6%;
+    margin-bottom: 2%;
+    text-align: left;
+    font-family: 'Red Hat Display', sans-serif;
+    color: #333333;
+    font-size: 80%;
+}
+
+/* sets the font for title on panal 3 */
+.darkblueTitle {
+    font-family: "DM Serif Display", serif;
+    font-size: 200%;
+    color: #2A4351;
+}
+
+/* container for panal 3 title */
+.exploreTitle {
+    font-size:190%;
+    text-align: center;
+    font-family: "DM Serif Display", serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: #2A4351;
+ 
+}
+
+/* sets the position and font for the title in 3 small images */
+.smallImageTitle {
+    text-align: left;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 110%;
+    font-weight: bold;
+    color: white;
+    padding: 6%;
+    height: fit-content;
+
+}
+/* sets the position and font for the text in 3 small images */
+.smallImageText {
+    text-align: left;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 70%;
+    color: white;
+    padding: 6%;
+
+}
+/* sets the position and font for the footer in 3 small images */
+.smallImageFooter {
+    text-align: left;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 80%;
+    font-weight: bold;
+    color: white;
+    padding: 6%;
+
+}
+/* container for row of icons */
+.iconContainer {
+    width: 95%;
+    margin: auto;
+    height: fit-content;
+    border: solid #2A4351 1px;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+    background-color: #2A4351;
+}
+/*  centers elements in foundation xy cells  */
+.CenterInCell {
+    width:100%;
+    text-align:center;
+}
+
+/*  container for anything that needs to be overlayed ontop of an image  */
+.overlayContent {
+    position: absolute;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; 
+
+}
+/*  conatiner that allows shadow images to be displayed ontop of a base image  */
+.shadow {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; 
+}
+
+
+
+
+/*  container for text  */
+.panalTextContainer {
+    width: 100%;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    color: white;
+    padding-bottom: 1rem;
+    background-color: transparent;
+}
+
+/*  sets font for text   */
+.panalTitleText {
+    font-family: "DM Serif Display", serif;
+    
+}
+
+
+/*  container for text  */
+.panalText {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 100%;
+}
+
+/* styling for button on panal 4*/
+.panal4buttonleft {
+    width: 15vh;
+    padding: 0.7rem;
+    color: white;
+    border-radius: 5px;
+    font-size: 75%;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: #18BEAB;
+}
+
+/* styling for button on panal 4*/
+.panal4buttonright {
+    width: 15vh;
+    font-size: 75%;
+    padding: 0.7rem;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: #DDB62E;
+}
+/* styling for button on panal 2*/
+.panal2button {
+    width: 12vh;
+    font-size: 100%;
+    padding: 0.7rem;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: #DDB62E;
+}
+/* adds curved border to footer 4*/
+.footerBorder {
+    border: solid #333333 1px;
+    border-bottom-left-radius: 20px; /* Curved top-left border */
+    border-bottom-right-radius: 20px; /* Curved top-right border */
+}
+
+
+
+
+/*  styles for when screen is greater than 900 pixels*/
+@media screen and (min-width: 901px) {
+    .panalTitleText {
+        font-size: 70px;
+    }
+
+    .circleImageBox {
+        width: 50%;
+        float: left;
+        padding: 6%;
+        padding-left: 17%;
+    }
+
+    .customCell {
+        height: 80vh;
+    }
+}
+/* changes styles when screen is less than 900 pixels*/
+@media screen and (max-width: 950px) {
+    .panalTitleText {
+        font-size: 32px;
+
+    }
+
+    .circleImageBox {
+        width: 90%;
+        margin: auto;
+    }
+
+    .customCell {
+        height: 70vh;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

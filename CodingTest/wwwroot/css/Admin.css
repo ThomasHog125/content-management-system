@@ -1,0 +1,67 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+}
+/* container for title of page*/
+.titleContainer {
+    text-align: center;
+    width: 100%;
+    font-family: 'Red Hat Display', sans-serif;
+    height: fit-content;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/*centers a grid to the middle of a page*/
+.gridContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+}
+/* sets widt of grid*/
+.grid-y {
+    width: 40%;
+}
+
+/* sets labels to be to the left of the input boxes*/
+label {
+    font-family: 'Red Hat Display', sans-serif;
+    float: left;
+    width: 30%; 
+}
+/*sets margin of cells*/
+.cell {
+    clear: both;
+    margin-bottom: 0.2rem;
+}
+
+/*styles input boxes*/
+input[type=text] {
+    display: inline-block;
+    width:70%;
+    margin:0px;
+    /* Adjust based on label width and margin */
+}
+/*changes margin of line*/
+hr {
+    margin:5px;
+}
+/* container for submit box*/
+.submitContainer {
+    width:100%;
+    height:fit-content;
+    text-align:center;
+
+}
+/* changes style of submit box*/
+.submitButton {
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 0.5rem;
+    border: solid black 2px;
+    background-color: ghostwhite;
+    border-radius: 7px;
+}
+
+

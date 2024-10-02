@@ -1,0 +1,117 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+@model CodingTest.Models.Elements
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="~/css/Admin.css" asp-append-version="true" />
+</head>
+<body>
+    <!-- title -->
+    <div class="titleContainer">
+        <div class="grid-x align-center " style="height:fit-content;">
+                <h1>Admin</h1></div>
+        </div>
+    <!-- container for grid -->
+    <div class="gridContainer">
+        <!-- grid containing input boxes -->
+        <div class="grid-y ">
+            <hr>
+            <!-- form enables data to be sent to database  -->
+            <form action="/Admin/Index" method="post">
+                <div class="cell">
+                    <label>Title for panel 1</label>
+                    <input type="text" asp-for="Panal1Title">
+                </div>
+
+                <div class="cell">
+                    <label>Image for Panel 1</label>
+                    <input type="text" asp-for="Panal1Image">
+
+                </div>
+                <hr>
+                <div class="cell">
+                    <label>Title for panel 2</label>
+                    <input type="text" asp-for="Panal2Title">
+
+                </div>
+                <div class="cell">
+                    <label>Text for panel 2</label>
+                    <input type="text" asp-for="Panal2Text">
+
+                </div>
+                <hr>
+                <div class="cell">
+                    <label>Title for panel 3</label>
+                    <input type="text" asp-for="Panal3Title">
+
+                </div>
+                <div class="cell">
+                    <label>Title for image 1 on panel 3</label>
+                    <input type="text" asp-for="Panal3ImageTitle1">
+
+                </div>
+
+                <div class="cell">
+                    <label>Text for image 1 on panel 3</label>
+                    <input type="text" asp-for="Panal3ImageText1">
+
+                </div>
+                <div class="cell">
+                    <label>Title for image 2 on panel 3</label>
+                    <input type="text" asp-for="Panal3ImageTitle2">
+
+                </div>
+
+                <div class="cell">
+                    <label>Text for image 2 on panel 3</label>
+                    <input type="text" asp-for="Panal3ImageText2">
+
+                </div>
+
+                <div class="cell">
+                    <label>Title for image 3 on panel 3</label>
+                    <input type="text" asp-for="Panal3ImageTitle3">
+ 
+                </div>
+
+                <div class="cell">
+                    <label>Text for image 3 on panel 3</label>
+                    <input type="text" asp-for="Panal3ImageText3">
+
+                </div>
+                <hr>
+                <div class="cell">
+                     <label>Title for panel 4</label>
+                    <input type="text" asp-for="Panal4Title">
+
+                </div>
+                <div class="cell">
+                    <label>Text for panel 4</label>
+                    <input type="text" asp-for="Panal4Text">
+
+                </div>
+                <hr>
+
+                <div class="cell">
+                    <div class="submitContainer">
+                        <button type="submit" class="submitButton">Submit</button>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="submitContainer">
+                        Submitting this form inserts a new version of content that will be published.
+                    </div>
+                </div>
+            </form>
+            
+
+            
+        </div>
+    </div>
+
+</body>
+</html>
